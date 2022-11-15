@@ -8,14 +8,14 @@ use SilverStripe\Forms\TextField;
 use SilverStripe\View\ArrayData;
 
 /**
- * A snippet provider that lets you add arbitrary HTML
+ * A snippet provider that lets you add generic HTML Meta Tags
  */
 class MetaTag implements SnippetProvider
 {
 
     public function getTitle()
     {
-        return "Meta Tag";
+        return _t(static::class . ".MetaTag", 'Meta Tag');
     }
 
     public function getSummary(array $params)
@@ -28,12 +28,12 @@ class MetaTag implements SnippetProvider
         return FieldList::create(
             TextField::create(
                 "TagName",
-                "Tag Name"
+                _t(static::class . ".TagName", 'Tag Name')
             ),
             TextField::create(
                 "TagContent",
-                "Tag Content"
-            ),
+                _t(static::class . ".TagContent", 'Tag Content')
+            )
         );
     }
 
