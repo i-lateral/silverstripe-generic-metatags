@@ -1,0 +1,23 @@
+{
+    "name": "ilateral/silverstripe-generic-metatags",
+    "description": "Add generic metatags to your site via TagManager module",
+    "type": "silverstripe-vendormodule",
+    "require": {
+        "sminnee/tagmanager": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mo",
+            "email": "morven@ilateral.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ilateral\\SilverStripe\\GenericMetaTags\\": "src/"
+        }
+    }
+}

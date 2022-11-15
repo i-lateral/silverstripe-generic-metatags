@@ -1,0 +1,1 @@
+<meta name="{$TagName}" content="{$TagContent}" />
